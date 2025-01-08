@@ -53,10 +53,24 @@ p1 {
 .no {
     text-decoration: none;
     color: inherit;
+    font-size:18pt;
 }
 
 .icon {
     width: 20px;
     height: 20px;
     margin-right: 0.2rem;
+}
+
+body {
+    background-image: url("/assets/bg.png");
+    background-repeat: repeat;
+    background-size: 250px;
+}
+
+.whitespace {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
