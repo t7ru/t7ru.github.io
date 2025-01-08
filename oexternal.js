@@ -9,11 +9,17 @@ function toggleHover(element) {
   element.classList.toggle("active");
 }
 
+const hoverElements = document.querySelectorAll(".hovercon");
+hoverElements.forEach(el => {
+  el.addEventListener("click", function (event) {
+    event.stopPropagation(); 
+  });
+});
+
 document.addEventListener("click", function (event) {
-  const hoverElements = document.querySelectorAll(".hovercon");
   hoverElements.forEach(el => {
-      if (!el.contains(event.target)) {
-          el.classList.remove("active");
-      }
+    if (!el.contains(event.target)) {
+      el.classList.remove("active");
+    }
   });
 });
