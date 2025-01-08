@@ -7,16 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function toggleHover(element) {
   element.classList.toggle("active");
+
+  setTimeout(() => {
+    element.classList.remove("active");
+  }, 3000);
 }
 
 document.addEventListener("click", function (event) {
   const hoverElements = document.querySelectorAll(".hovercon");
-  let clickedInside = false;
-
   hoverElements.forEach(el => {
-    if (el.contains(event.target)) {
-      clickedInside = true;
-    } else {
+    if (!el.contains(event.target)) {
       el.classList.remove("active");
     }
   });
+});
