@@ -13,7 +13,7 @@ p1 {
 .hovercon {
     position: relative;
     display: inline-block;
-    cursor: pointer;
+    cursor: help;
 }
 
 .hovermsg {
@@ -35,4 +35,22 @@ p1 {
 .hovercon:hover .hovermsg {
     opacity: 1;
     visibility: visible;
+}
+
+.pop {
+    display: inline-block;
+    width: fit-content; 
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms; 
+    transform-origin: left;
+}
+
+.pop:hover {
+    transform: scale(1.25) translateX(0.5rem) skewX(-10deg);
+}
+
+.no {
+    text-decoration: none;
+    color: inherit;
 }
