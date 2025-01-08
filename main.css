@@ -1,0 +1,38 @@
+html {
+    font-family: "Carrois Gothic", serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+p1 {
+    display: block;
+    font-size: 10pt;
+    text-align: right;
+}
+
+.hovercon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hovermsg {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10pt;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.hovercon:hover .hovermsg {
+    opacity: 1;
+    visibility: visible;
+}
