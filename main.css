@@ -140,7 +140,7 @@ body {
     border-left: 4px solid black;
     border-right: 4px solid black;
     border-radius: 12px;
-    height: 200px;
+    height: 300px;
     width: 100%;
 }
 
@@ -159,6 +159,6 @@ body {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-825px);
+        transform: translateX(-1238px);
     }
 }
