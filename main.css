@@ -21,15 +21,16 @@ p1 {
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: #333333c1;
     color: white;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 12px;
     font-size: 10pt;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    white-space: nowrap;
+    width: 150%;
+    font-weight: bold;
 }
 
 .hovercon:hover .hovermsg {
@@ -107,7 +108,6 @@ body {
     padding: 0;
     overflow: hidden;
     width: fit-content;
-    height: 100%;
   }
   
   .box3 img {
