@@ -52,7 +52,7 @@ p1 {
 }
 
 .pop.type2:hover {
-    transform: scale(1.4) translateX(0);
+    transform: scale(1.35) translateX(0);
     transform-origin: center;
     transition-duration: 200ms; 
 }
@@ -60,6 +60,9 @@ p1 {
 .no {
     text-decoration: none;
     color: inherit;
+}
+
+.no.type2 {
     font-size:18pt;
 }
 
