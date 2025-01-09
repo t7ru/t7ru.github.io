@@ -148,10 +148,10 @@ body {
     background: url("/assets/sciadvslider.png") repeat-x;
     background-size: contain;
     height: 100%;
-    width: 1337px;
-    animation: slide 50s linear infinite;
-    -webkit-animation: slide 50s linear infinite;
-    -moz-animation: slide 50s linear infinite;
+    width: 2500px;
+    animation: slide 20s linear infinite;
+    -webkit-animation: slide 20s linear infinite;
+    -moz-animation: slide 20s linear infinite;
 }
 
 @keyframes slide {
@@ -159,6 +159,6 @@ body {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-1337px);
+        transform: translateX(-825px);
     }
 }
