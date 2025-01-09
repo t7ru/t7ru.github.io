@@ -134,3 +134,31 @@ body {
  .flexbox > div {
     margin-bottom: 5px;
 }
+
+.sliderbox {
+    overflow: hidden;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-radius: 12px;
+    height: 200px;
+    width: 100%;
+}
+
+.slider {
+    background: url("/assets/sciadvslider.png") repeat-x;
+    background-size: contain;
+    height: 100%;
+    width: 1337px;
+    animation: slide 50s linear infinite;
+    -webkit-animation: slide 50s linear infinite;
+    -moz-animation: slide 50s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1337px);
+    }
+}
