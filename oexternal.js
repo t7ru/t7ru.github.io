@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("a");
-  links.forEach(link => {
+  links.forEach((link) => {
     link.setAttribute("target", "_blank");
   });
 });
