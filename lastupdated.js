@@ -13,7 +13,7 @@ window.onload = function() {
                 hour: "2-digit",
                 minute: "2-digit",
             });
-            document.getElementById('lastupdated').innerText = `Last updated on ${formattedDate} (local time.)`;
+            document.getElementById("lastupdated").innerText = `Last updated on ${formattedDate} (local time.)`;
         })
-        .catch(error => console.error('Error fetching commit data:', error));
+        .catch(error => console.error("Error fetching commit data:", error));
 };
