@@ -5,13 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-//function toggleHover(element) {
-//  element.classList.toggle("active");
-//  setTimeout(() => {
-//    element.classList.remove("active");
-//  }, 3000);
-//}
-
 document.addEventListener("click", function (event) {
   const hoverElements = document.querySelectorAll(".hovercon");
   hoverElements.forEach(el => {
