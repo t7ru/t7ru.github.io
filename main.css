@@ -80,7 +80,9 @@ body {
 
 .whitespace {
             background-color: #fff;
-            padding: 25px;
+            padding: 30px;
+            padding-bottom: 5px;
+            padding-top: 5px;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
