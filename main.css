@@ -95,12 +95,18 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .whitebox {
+    width: 80%;
+  }
+}
+
 .whitebox.type2 {
   width: 55%;
 }
 
 @media (max-width: 768px) {
-  .whitebox {
+  .whitebox.type2 {
     width: 80%;
   }
 }
@@ -246,30 +252,4 @@ h1 {
   border: 1px solid black;
   border-radius: 12px;
   padding: 4px 8px;
-}
-
-
-.tag.sciadv {
-  background: #032D5D;
-  color: white;
-}
-
-.tag.twewy {
-  background: black;
-  color: white;
-}
-
-.tag.aa {
-  background: #017DBE;
-  color: #FFF100;
-}
-
-.tag.re {
-  background: black;
-  color: red;
-}
-
-.tag.pd {
-  background: #0A561A;
-  color: white;
 }
