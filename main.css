@@ -217,6 +217,17 @@ h1 {
   border: black dashed 1px;
 }
 
+.gridsmaller .image-container {
+  flex: 1 1 calc(25% - 10px); /* Fit 4 items per row */
+  max-width: calc(25% - 10px);
+}
+
+.gridsmaller img {
+  aspect-ratio: 2 / 3;
+  border: 1px dashed black;
+}
+
+
 .tag-container {
   display: flex;
   flex-wrap: wrap;
@@ -252,4 +263,9 @@ h1 {
 .tag.re {
   background: black;
   color: red;
+}
+
+.tag.pd {
+  background: #0A561A;
+  color: white;
 }
