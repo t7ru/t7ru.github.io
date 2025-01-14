@@ -9,6 +9,11 @@
 }
 
 .tag.aa {
+  background: #f4f2e5;
+  color: #026ca5;
+}
+
+.tag.pkmn {
   background: #017dbe;
   color: #fff100;
 }
