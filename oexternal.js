@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("a");
   links.forEach((link) => {
-    link.setAttribute("target", "_blank");
+    if (!link.classList.contains("noex")) {
+      link.setAttribute("target", "_blank");
+    }
   });
 });
