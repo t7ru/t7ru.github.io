@@ -218,7 +218,7 @@ h1 {
 }
 
 .gridsmaller .image-container {
-  flex: 1 1 calc(25% - 10px); /* Fit 4 items per row */
+  flex: 1 1 calc(25% - 10px);
   max-width: calc(25% - 10px);
 }
 
