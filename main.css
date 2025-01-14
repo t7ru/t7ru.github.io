@@ -101,6 +101,19 @@ body {
   }
 }
 
+.whitebox2 {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .whitebox2 {
+    width: 80%;
+  }
+}
+
+/* it works on dev console, but not on my phone for some reason
 .whitebox.type2 {
   width: 55%;
 }
@@ -110,6 +123,7 @@ body {
     width: 80%;
   }
 }
+*/
 
 .box2 {
   border-radius: 12px;
