@@ -248,3 +248,8 @@ h1 {
   background: #017DBE;
   color: #FFF100;
 }
+
+.tag.re {
+  background: black;
+  color: red;
+}
