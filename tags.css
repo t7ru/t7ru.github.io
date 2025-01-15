@@ -47,3 +47,8 @@
   background: #C6161C;
   color: white;
 }
+
+.tag.unav {
+  background: gray;
+  color:white;
+}
