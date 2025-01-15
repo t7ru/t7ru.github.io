@@ -254,7 +254,7 @@ h1 {
   padding: 4px 8px;
 }
 
-/* Popup overlay */
+/* Popup overlay with initial opacity set to 0 for fade effect */
 .popup-overlay {
   display: none; /* Hidden by default */
   position: fixed;
@@ -263,15 +263,16 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
-  z-index: 999; /* Ensure it's above other elements */
+  z-index: 1337; /* Ensure it's above other elements */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Fade in and fade out effect */
 }
 
 /* Popup content */
 .popup-content {
   position: relative;
   margin: auto;
-  top: 10%;
-  width: 50%;
+  width: 55%;
   max-width: 600px;
   background: white;
   border-radius: 10px;
@@ -291,6 +292,10 @@ h1 {
   cursor: pointer;
 }
 
+.popup-close:hover {
+  color: red;
+}
+
 /* Buy button */
 .buy-button {
   padding: 4px 8px;
@@ -299,7 +304,9 @@ h1 {
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 .buy-button:hover {
