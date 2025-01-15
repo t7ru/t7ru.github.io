@@ -136,13 +136,15 @@ body {
 
 .line1 {
   position: relative;
-  height: 1px;
+  height: 2px;
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
     rgb(0, 0, 0),
     rgba(0, 0, 0, 0)
   );
+  transform: scaleY(0.5); 
+  transform-origin: top;
 }
 
 .flexbox {
