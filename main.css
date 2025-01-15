@@ -308,6 +308,7 @@ h1 {
   font-weight: bold;
   font-family: 'Carrois Gothic', sans-serif;
   text-decoration: underline;
+  width:100%;
 }
 
 .buy-button:hover {
