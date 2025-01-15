@@ -1,4 +1,4 @@
-// function to open the specific popup
+// function to open a specific popup
 function openPopup(popupId) {
     const popup = document.getElementById(popupId);  // get the popup by its id
     popup.style.display = 'flex';  // shows the popup
