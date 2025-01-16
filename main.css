@@ -101,7 +101,8 @@ body {
   }
 }
 
-.whitebox.type2 {
+/*
+ .whitebox.type2 {
   width: 55%;
 }
 
@@ -110,6 +111,7 @@ body {
     width: 80%;
   }
 }
+*/
 
 .box2 {
   border-radius: 12px;
@@ -235,6 +237,12 @@ h1 {
   min-width: 155px;
 }
 
+@media (max-width: 768px) {
+  .gridsmaller .image-container {
+    min-width: 135px;
+  }
+}
+
 .gridsmaller img {
   aspect-ratio: 2 / 3;
   border: 1px dashed black;
@@ -255,6 +263,12 @@ h1 {
   border: 1px solid black;
   border-radius: 12px;
   padding: 4px 8px;
+}
+
+@media (max-width: 768px) {
+  .tag {
+    width: 100%;
+  }
 }
 
 /* Popup overlay with initial opacity set to 0 for fade effect */
