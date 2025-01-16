@@ -231,7 +231,8 @@ h1 {
 
 .gridsmaller .image-container {
   flex: 1 1 calc(25% - 10px);
-  max-width: calc(25% - 10px);
+  max-width: calc(30% - 10px);
+  min-width: 155px;
 }
 
 .gridsmaller img {
