@@ -1,0 +1,530 @@
+html {
+    font-family: "Carrois Gothic", serif;
+    font-weight: 400;
+    font-size: larger;
+  }
+
+  body {
+    background-image: url("/assets/memoirbg1.png"),
+      url("https://i.imgur.com/mu2XlFQ.png");
+    background-repeat: repeat;
+    background-size: 300px;
+  }
+  
+  pb {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 14pt;
+    text-align: left;
+  }
+
+  pb1 {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 18pt;
+    text-align: left;
+  }
+
+  pb2 {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: inline;
+    font-size: 14pt;
+    text-align: left;
+  }
+
+  ii {
+    display:block;
+    text-indent: 25px;
+  }
+
+  pg {
+    font-family: "Carrois Gothic", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 14pt;
+    text-align: left;
+  }
+
+  pg1 {
+    font-family: "Carrois Gothic", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 18pt;
+    text-align: left;
+  }
+
+  pg2 {
+    font-family: "Carrois Gothic", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    display: inline;
+    text-align: left;
+  }
+
+  pi {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 13pt;
+    text-align: left;
+  }
+
+  pi1 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 17pt;
+    text-align: left;
+  }
+
+  pi2 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13pt;
+    display: inline;
+    text-align: left;
+  }
+
+  monor {
+    font-family: "Inconsolata", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13pt;
+    display: inline;
+    font-variation-settings:
+      "wdth" 100;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 11px;
+}
+
+monol {
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13pt;
+  display: inline;
+  font-variation-settings:
+    "wdth" 100;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 11px;
+}
+
+chatr {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+chatl {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+  p1 {
+    display: block;
+    font-size: 10pt;
+    text-align: right;
+  }
+  
+  .hovercon {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+  }
+  
+  .hovermsg {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333333c1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 10pt;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    width: 150%;
+    font-weight: bold;
+  }
+  
+  .hovercon:hover .hovermsg {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* pops things out on hover */
+  .pop {
+    display: inline-block;
+    width: fit-content;
+    transition-property: background-color, border-color, color, fill, stroke,
+      opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transform-origin: center;
+  }
+  
+  .pop:hover {
+    transform: scale(1.25) translateX(0.5rem) skewX(-10deg);
+  }
+  
+  .pop.type2:hover {
+    transform: scale(1.35) translateX(0);
+    transform-origin: center;
+    transition-duration: 200ms;
+  }
+  
+  /* remove deco */
+  .no {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* no decorations and different font size */
+  .no.type2 {
+    font-size: 18pt;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.2rem;
+  }
+  
+  .whitespace {
+    background-color: #000000;
+    padding: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.7);
+    color: white;
+  }
+  
+  .whitebox {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .whitebox {
+      width: 80%;
+    }
+  }
+  
+  .box2 {
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 10px;
+    width: calc(80% - 2em);
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .box2 {
+      min-width: 94%;
+    }
+  }
+  
+  .box3 {
+    display: inline-block;
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 0;
+    overflow: hidden;
+    width: fit-content;
+  }
+  
+  .box3 img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  line1 {
+    display: block;
+    position: relative;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgb(255, 255, 255),
+      rgba(0, 0, 0, 0)
+    );
+    transform: scaleY(0.5); 
+    transform-origin: top;
+  }
+  
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .flexbox > div {
+    margin-bottom: 5px;
+  }
+  
+  .sliderbox {
+    overflow: hidden;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-radius: 12px;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .slider {
+    background: url("/assets/sciadvslider.png") repeat-x;
+    background-size: contain;
+    height: 100%;
+    width: 2500px;
+    animation: slide 25s linear infinite;
+    -webkit-animation: slide 25s linear infinite;
+    -moz-animation: slide 25s linear infinite;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-1238px);
+    }
+  }
+  
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box2 > *:not(#particles-js) {
+    position: relative;
+  }
+  
+  h2 {
+    margin-bottom:-2%
+  }
+  
+  h1 {
+    margin-bottom:-2%
+  }
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .image-container {
+    flex: 1 1 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .image-container {
+      min-width: 280px;
+    }
+  }
+  
+  /* image boxes */
+  .image-grid img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    border: black dashed 1px;
+  }
+  
+  /* smaller grid */
+  .gridsmaller .image-container {
+    flex: 1 1 calc(25% - 10px);
+    max-width: calc(25% - 10px);
+    min-width: 155px;
+  }
+  
+  @media (max-width: 768px) {
+    .gridsmaller .image-container {
+      min-width: 135px;
+    }
+  }
+  
+  .gridsmaller img {
+    aspect-ratio: 2 / 3;
+    border: 1px dashed black;
+  }
+  
+  /* tag container */
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  /* Tag styling */
+  .tag {
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 4px 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .tag {
+      width: 100%;
+    }
+  }
+  
+  /* Popup overlay with initial opacity set to 0 for fade effect */
+  .popup-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+    z-index: 1337; /* Ensure it's above other elements */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Fade in and fade out effect */
+  }
+  
+  /* Popup content */
+  .popup-content {
+    position: relative;
+    margin: auto;
+    width: 55%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close button */
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* hover color for close button */
+  .popup-close:hover {
+    color: red;
+  }
+  
+  /* Buy button */
+  .buy-button {
+    padding: 4px 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    width:100%;
+  }
+  
+  /* hover color for buy button */
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
+
+   /* Style the tab */
+.tab {
+  text-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: black;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  border-radius: 12px;
+  transition: 0.3s;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  color: black;
+  border-color: gray;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+} 
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
