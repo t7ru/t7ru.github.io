@@ -41,6 +41,36 @@ html {
     text-align: left;
   }
 
+  pm {
+    font-family: "Arial", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 14pt;
+    text-align: left;
+  }
+
+  pm1 {
+    font-family: "Arial", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 18pt;
+    text-align: left;
+  }
+
+  pm2 {
+    font-family: "Arial", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: inline;
+    font-size: 14pt;
+    text-align: left;
+  }
+
   ii {
     display:block;
     text-indent: 25px;
