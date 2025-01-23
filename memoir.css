@@ -106,6 +106,36 @@ html {
     text-align: left;
   }
 
+  pe {
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 14pt;
+    text-align: left;
+  }
+
+  pe1 {
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 18pt;
+    text-align: left;
+  }
+
+  pe2 {
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: inline;
+    font-size: 14pt;
+    text-align: left;
+  }
+
   monor {
     font-family: "Inconsolata", serif;
     font-optical-sizing: auto;
@@ -498,6 +528,8 @@ chatl {
   border: 2px solid white;
   font-weight: bold;
   font-family: 'Carrois Gothic', sans-serif;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 /* Change background color of buttons on hover */
