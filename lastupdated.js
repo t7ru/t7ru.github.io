@@ -15,7 +15,7 @@ window.onload = function () {
       });
       document.getElementById(
         "lastupdated"
-      ).innerText = `Last updated on ${formattedDate} (local time.)`;
+      ).innerText = `Last updated on ${formattedDate} (local time).`;
     })
     .catch((error) => console.error("Error fetching commit data:", error));
 };
