@@ -92,20 +92,15 @@
 	transition: 0s;
 }
 
-@keyframes backgroundBreathing {
-	0%,
-	100% {
-		background-size: 300px;
-	}
-
-	50% {
-		background-size: 310px;
-	}
+@keyframes diagonalMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100px 100px;
+    }
 }
 
 body {
-	background-image: url("/assets/bg.png"), url("https://i.imgur.com/mu2XlFQ.png");
-	background-repeat: repeat;
-	background-attachment: fixed;
-	animation: backgroundBreathing 15s ease-in-out infinite;
+    animation: diagonalMove 15s linear infinite;
 }
