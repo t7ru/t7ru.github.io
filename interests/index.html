@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="/main.css">
         <link rel="stylesheet" href="/tags.css">
+        <link rel="stylesheet" href="/anims.css">
         <title>Tofu's Interests</title>
         <link rel="icon" type="image/png" href="/assets/favicon.png">
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -23,16 +24,16 @@
     </head>
     <body>
         <center><img src="/assets/tofu2.png" width="70%" style="max-width:480px; max-height: 221px"></center>
-        <div class="whitespace whitebox" style="text-align:left;">
-            « <u><a href="https://t7ru.link/" class="no noex">Back to website</a></u>
+        <div class="whitespace whitebox reveal" style="text-align:left;">
+            « <u><a href="/" class="no noex">Back to website</a></u>
         </div>
             <br/>
-        <div class="whitespace whitebox">
+        <div class="whitespace whitebox reveal">
             <h1 style="margin-bottom: 5px;"><i>Taking a new step, uttering a new word, is what people fear most.</i></h1>
             <p1>"damn thats wise bro whered u copy it from"</p1>
             <line1 style="bottom:-10px;"></line1>
-            <h2 style="margin-bottom:2%">All-Time Favorites</h2>
-            <div class="image-grid">
+            <h2 style="margin-bottom:2%" class="reveal">All-Time Favorites</h2>
+            <div class="image-grid reveal">
                 <div class="image-container">
                     <img src="/assets/LibraryArt/AATrilogy.png" alt="AATrilogy">
                     <div class="tag-container">
@@ -107,9 +108,9 @@
                   </div>              
             </div>
             <br/>
-            <line1 style="bottom:-10px;"></line1>
-            <h2 style="margin-bottom:2%">Recommendations</h2>
-            <div class="image-grid gridsmaller">
+            <line1 style="bottom:-10px;" class="reveal"></line1>
+            <h2 style="margin-bottom:2%" class="reveal">Recommendations</h2>
+            <div class="image-grid gridsmaller reveal">
               <div class="image-container">
                 <img src="/assets/LibraryArt/AK.png" alt="AK">
                 <div class="tag-container">
@@ -256,21 +257,23 @@
                   </div>
               </div>
             <br/>
-            <line1 style="bottom:-10px;"></line1>
-            <h3 style="margin-bottom: 2%;">Tags</h3>
-            <div class="tag ak">Batman: Arkham</div>
-            <div class="tag aa">Ace Attorney</div>
-            <div class="tag os">OneShot</div>
-            <div class="tag pd">PAYDAY</div>
-            <div class="tag pkmn">Pokémon</div>
-            <div class="tag re">Resident Evil</div>
-            <div class="tag sciadv">Science Adventure</div>
-            <div class="tag tloz">The Legend of Zelda</div>
-            <div class="tag twd">The Walking Dead: The Telltale Series</div>
-            <div class="tag twewy">The World Ends with You</div>
-            <div class="tag yttd">Your Turn to Die</div><br/>
-            <line1></line1>
-            <h4 id="lastupdated"></h4>
+            <line1 style="bottom:-10px;" class="reveal"></line1>
+            <h3 style="margin-bottom: 2%;" class="reveal">Tags</h3>
+            <div class="reveal">
+                <div class="tag ak">Batman: Arkham</div>
+                <div class="tag aa">Ace Attorney</div>
+                <div class="tag os">OneShot</div>
+                <div class="tag pd">PAYDAY</div>
+                <div class="tag pkmn">Pokémon</div>
+                <div class="tag re">Resident Evil</div>
+                <div class="tag sciadv">Science Adventure</div>
+                <div class="tag tloz">The Legend of Zelda</div>
+                <div class="tag twd">The Walking Dead: The Telltale Series</div>
+                <div class="tag twewy">The World Ends with You</div>
+                <div class="tag yttd">Your Turn to Die</div><br/>
+            </div>
+            <line1 class="reveal"></line1>
+            <h4 id="lastupdated" class="reveal"></h4>
         </div>
         <center><!-- no idea why text align doesn't work-->
             <p class="pop type2" style="font-size:11pt; color:white; text-shadow: 0 0 5px gray, 0 0 8px black; margin-top:18px;"><a href="https://github.com/t7ru/t7ru.github.io" class="no"><u>this site is completely open source!</u></a></p>
@@ -279,7 +282,7 @@
     </body>
 </html>
 
-<!-- Pop ups -->
+<!-- Pop ups (could've used js but im too lazy to fix it now lmao) -->
  <!-- re2 -->
 <div id="popup1" class="popup-overlay">
   <div class="popup-content">
