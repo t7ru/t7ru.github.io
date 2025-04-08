@@ -92,6 +92,10 @@
 	transition: 0s;
 }
 
+body {
+	animation: diagonalMove 30s linear infinite;
+}
+
 @keyframes diagonalMove {
     0% {
         background-position: 0 0;
