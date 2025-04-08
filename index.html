@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <link rel="stylesheet" href="mainnew.css">
-    <link rel="stylesheet" href="anims.css">        
+        <link rel="stylesheet" href="mainnew.css">
+        <link rel="stylesheet" href="anims.css">
+        <title>Tofu's Stuffs</title>
+        <link rel="icon" type="image/png" href="/assets/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+        <link rel="apple-touch-icon" href="/assets/favicon.png">
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+        </style>
     <script src="oexternal.js"></script>
-    <script src="hovertotap.js"></script>
+    <script src="hovertotap.js"></script> 
     <script src="lastupdated.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css">
-    <!-- particles script needs to target specific container now -->
-</head>
-<body>
+    </head>
+    <body>
     <div class="main-layout">
-        <!-- Left Sticky Column -->
         <div class="left-column reveal">
             <div class="flexbox" style="justify-content: center;"> <!-- This flexbox now just holds image and socials -->
                 <span class="hovercon" onclick="toggleHover(this)">
@@ -38,9 +47,7 @@
             </div>
         </div>
 
-        <!-- Right Column -->
         <div class="right-column">
-            <!-- Floating Navigation Box -->
             <div class="floating-nav reveal">
                 <a href="https://t7ru.atabook.org" class="pop type2 noex" title="Guestbook"><img src="assets/tofu.png" alt="Guestbook"></a> <!-- Added title -->
                 <a href="/interests" class="pop type2 noex" title="Interests"><img src="assets/tofu2.png" alt="Interests"></a> <!-- Added title -->
@@ -48,16 +55,13 @@
                 <a href="https://tds-editor.live/" class="pop type2" title="TDS Editor"><img src="assets/stateditor.png" alt="TDS Editor"></a> <!-- Added title -->
             </div>
 
-            <!-- Main Content Box -->
             <div class="main-content reveal">
-                <!-- Intro Section -->
                 <div>
                     <h1 style="margin-bottom: 5px; text-align: center;"><i>Whose eyes are those eyes?</i></h1>
                     <p class="subtitle">"wth r u talking about bro"</p>
                 </div>
                 <hr class="divider">
 
-                <!-- Consolidated About Me Section -->
                 <h2>About Me</h2>
                 <p>
                     Ello, I'm Tofu, also
@@ -72,7 +76,7 @@
                 <ul class="about-list"> <!-- Added class for styling -->
                     <li><i class="bi bi-gender-male icon"></i>I'm a dude</li> <!-- Added icon -->
                     <li>
-                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-hearts icon"></i>I like animals<span class="hovermsg"> <!-- Added icon -->
+                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-emoji-tear"></i>I like animals<span class="hovermsg"> <!-- Added icon -->
                             I LIKE THEM PLATONICALLY, I AM NOT A FURRY PLEASE I SWEAR.</span>
                         </span>
                     </li>
@@ -93,7 +97,6 @@
                 </ul>
                 <hr class="divider">
 
-                <!-- Slider -->
                 <div class="sliderbox"><div class="slider"></div></div>
                 <hr class="divider">
 
@@ -102,14 +105,14 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer-content"> <!-- Changed from center, added class -->
         <p class="pop type2" style="font-size:11pt; margin-top:0;"><a href="https://github.com/t7ru/t7ru.github.io" class="no"><u>this site is completely open source!</u></a></p>
         <p class="subtitle" style="text-align: center; margin-bottom:0;">it's also best seen on pc...</p> <!-- Changed from p1 -->
     </footer>
-    <script>
-        particlesJS.load("particles-js-socials", "/particles.json", function() {
-        });
-    </script>
 </body>
+
+<script>
+    particlesJS.load("particles-js-socials", "/particles.json", function() {
+    });
+</script>
 </html>
