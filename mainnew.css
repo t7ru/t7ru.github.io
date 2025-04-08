@@ -97,9 +97,9 @@ hr.divider {
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-	width: 150%;
+	width: 15rem;
 	font-weight: bold;
-	z-index: 10;
+	z-index: 101;
 	text-align: center;
 }
 
@@ -147,16 +147,17 @@ hr.divider {
 .main-layout {
 	display: flex;
 	gap: 25px;
-	padding: 1.5rem 10rem 1.5rem 10rem;
+	padding: 1.5rem 1rem 1.5rem calc(14rem + 3rem); /* Add space for fixed left column */
 	align-items: flex-start;
 	max-width: 1400px;
 	margin: 0 auto;
 }
 
 .left-column {
+	position: fixed;
 	width: 14rem;
-	position: sticky;
-	top: 20px;
+	top: 6.4rem;
+	left: max(1rem, calc(50% - 700px + 1rem));
 	flex-shrink: 0;
 	padding: 20px;
 	border-radius: 12px;
@@ -165,7 +166,7 @@ hr.divider {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	margin-top: 5rem;
+	z-index: 10;
 }
 
 .right-column {
@@ -399,7 +400,6 @@ hr.divider {
 	text-align: center;
 	padding: 20px;
 	color: white;
-	margin-top: 2rem;
 }
 
 .footer-content p,
@@ -497,7 +497,6 @@ hr.divider {
 .collapsible-content {
     padding: 0 18px;
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.3s ease-out, padding-top 0.3s ease-out, padding-bottom 0.3s ease-out;
     background-color: white;
 }
@@ -506,42 +505,13 @@ hr.divider {
 	list-style: none;
 }
 
+.text-muted {
+    color: #6c757d;
+	font-size: 0.8em;
+}
+
 /* Responsive */
-/* Larger Tablets / Smaller Laptops */
-@media (max-width: 1200px) {
-	.main-layout {
-		padding: 1.5rem 5rem;
-	}
-}
-
-/* Tablets */
-@media (max-width: 1024px) {
-	.main-layout {
-		padding: 1.5rem 2rem;
-		gap: 20px;
-	}
-
-	.left-column {
-		width: 12rem;
-		margin-top: 2rem;
-	}
-
-	.floating-nav {
-		width: auto;
-		max-width: 90%;
-		align-self: center;
-	}
-
-	h1 {
-		font-size: 1.8em;
-	}
-
-	h2 {
-		font-size: 1.6em;
-	}
-}
-
-/* Smaller Tablets / Large Phones */
+/* Small Tablets / Large Phones */
 @media (max-width: 900px) {
 	.main-layout {
 		flex-direction: column;
@@ -552,7 +522,9 @@ hr.divider {
 	.left-column {
 		position: static;
 		width: 100%;
-		margin-top: 0;
+		top: auto;
+		left: auto;
+		z-index: 1;
 		padding: 1rem;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 		gap: 1em;
