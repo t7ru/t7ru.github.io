@@ -23,36 +23,35 @@
     <body>
     <div class="main-layout">
         <div class="left-column reveal">
-            <div class="flexbox" style="justify-content: center;"> <!-- This flexbox now just holds image and socials -->
+            <div class="flexbox" style="justify-content: center;">
                 <span class="hovercon" onclick="toggleHover(this)">
                     <div class="box3">
-                        <img src="/assets/sarai.png" alt="Sarai" class="imgh"> <!-- Added alt text -->
+                        <img src="/assets/sarai.png" alt="Sarai" class="imgh">
                     </div>
                     <span class="hovermsg">
                     Hashigami Sarai from Science Adventure's Occultic;Nine.
                     </span>
                 </span>
-                <hr class="divider"> <!-- Added divider -->
-                <div class="box2"> <!-- Socials Box -->
+                <hr class="divider">
+                <div class="box2">
                     <div id="particles-js-socials"></div>
                     <h1>My Socials</h1>
-                    <!-- Using Bootstrap Icons -->
                     <span class="pop"><a href="https://discord.com/users/380694434980954114" class="no type2"><i class="bi bi-discord icon"></i>Discord</a></span>
                     <span class="pop"><a href="https://community.fandom.com/wiki/User:Gabonnie" class="no type2"><img src="assets/fandomlogo.png" class="icon">Fandom</a></span>
                     <span class="pop"><a href="https://github.com/t7ru" class="no type2"><i class="bi bi-github icon"></i>GitHub</a></span>
                     <span class="pop"><a href="https://www.instagram.com/gia.benn" class="no type2"><i class="bi bi-instagram icon"></i>Instagram</a></span>
                     <span class="pop"><a href="https://steamcommunity.com/id/bengiaa" class="no type2"><i class="bi bi-steam icon"></i>Steam</a></span>
-                    <span class="pop"><a href="https://x.com/taotoru" class="no type2"><i class="bi bi-twitter-x icon"></i>X</a></span> <!-- Changed icon -->
+                    <span class="pop"><a href="https://x.com/taotoru" class="no type2"><i class="bi bi-twitter-x icon"></i>X</a></span>
                 </div>
             </div>
         </div>
 
         <div class="right-column">
             <div class="floating-nav reveal">
-                <a href="https://t7ru.atabook.org" class="pop type2 noex" title="Guestbook"><img src="assets/tofu.png" alt="Guestbook"></a> <!-- Added title -->
-                <a href="/interests" class="pop type2 noex" title="Interests"><img src="assets/tofu2.png" alt="Interests"></a> <!-- Added title -->
-                <a href="/memoir" class="pop type2 noex" title="Memoir"><img src="assets/memoirlogo.png" alt="Memoir"></a> <!-- Added title -->
-                <a href="https://tds-editor.live/" class="pop type2" title="TDS Editor"><img src="assets/stateditor.png" alt="TDS Editor"></a> <!-- Added title -->
+                <a href="https://t7ru.atabook.org" class="pop type2 noex" title="Guestbook"><img src="assets/tofu.png" alt="Guestbook"></a>
+                <a href="/interests" class="pop type2 noex" title="Interests"><img src="assets/tofu2.png" alt="Interests"></a>
+                <a href="/memoir" class="pop type2 noex" title="Memoir"><img src="assets/memoirlogo.png" alt="Memoir"></a>
+                <a href="https://tds-editor.live/" class="pop type2" title="TDS Editor"><img src="assets/stateditor.png" alt="TDS Editor"></a>
             </div>
 
             <div class="main-content reveal">
@@ -62,7 +61,7 @@
                 </div>
                 <hr class="divider">
 
-                <h2>About Me</h2>
+                <h2><i class="bi bi-person-square"></i> Myself</h2>
                 <p>
                     Ello, I'm Tofu, also
                     <span class="hovercon" onclick="toggleHover(this)">
@@ -71,48 +70,69 @@
                         (we don't talk about my 1000 other names lololol.)
                         </span>
                     </span>
-                    Part-time philosopher, full-time delusional.
+                    Part-time philosopher, full-time delusional.<br/>You probably know me from online video games or wikis, unless you know me irl then, well, I'm screwed.<br/>Anyhow, feel free to reach out to me on any of my socials, I don't bite, I think.<br/>I also have a guestbook, so if you want to leave a message, feel free to do so!
                 </p>
-                <ul class="about-list"> <!-- Added class for styling -->
-                    <li><i class="bi bi-gender-male icon"></i>I'm a dude</li> <!-- Added icon -->
-                    <li>
-                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-emoji-tear"></i>I like animals<span class="hovermsg"> <!-- Added icon -->
-                            I LIKE THEM PLATONICALLY, I AM NOT A FURRY PLEASE I SWEAR.</span>
-                        </span>
-                    </li>
-                    <li><i class="bi bi-book-half icon"></i>I'm studying biology</li> <!-- Added icon -->
-                    <li><i class="bi bi-easel icon"></i>Really good at image editing</li> <!-- Added icon -->
-                    <li>
-                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-code-slash icon"></i>Coding is my hobby<span class="hovermsg"> <!-- Added icon -->
-                            Especially CSS and HTML—I learned those from working on wikis.</span>
-                        </span>
-                    </li>
-                    <li><i class="bi bi-stars icon"></i>Massive SciADV glazer</li> <!-- Added icon -->
-                    <li><i class="bi bi-hospital icon"></i>Probably should be locked up in an asylum</li> <!-- Added icon -->
-                    <li>
-                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-chat-dots icon"></i>Great person to talk to<span class="hovermsg"> <!-- Added icon -->
-                            Alledgedly, so kindly do not quote me on this.</span>
-                        </span>
-                    </li>
-                </ul>
+
+                <div class="collapsible-container">
+                    <div class="collapsible-column">
+                        <div class="collapsible-box">
+                            <button class="collapsible-toggle" type="button" data-target="#about-content">About</button>
+                            <div class="collapsible-content" id="about-content">
+                                <ul>
+                                    <li><i class="bi bi-gender-male icon"></i>I'm a dude</li>
+                                    <li>
+                                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-emoji-tear icon"></i>I like animals
+                                            <span class="hovermsg">I LIKE THEM PLATONICALLY, I AM NOT A FURRY PLEASE I SWEAR.</span>
+                                        </span>
+                                    </li>
+                                    <li><i class="bi bi-book-half icon"></i>I'm studying biology</li>
+                                    <li><i class="bi bi-easel icon"></i>Really good at image editing</li>
+                                    <li>
+                                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-code-slash icon"></i>Coding is my hobby
+                                            <span class="hovermsg">Especially CSS and HTML—I learned those from working on wikis.</span>
+                                        </span>
+                                    </li>
+                                    <li><i class="bi bi-stars icon"></i>Massive SciADV glazer</li>
+                                    <li><i class="bi bi-hospital icon"></i>Probably should be locked up in an asylum</li>
+                                    <li>
+                                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-chat-dots icon"></i>Great person to talk to
+                                            <span class="hovermsg">Alledgedly, so kindly do not quote me on this.</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="collapsible-column">
+                        <div class="collapsible-box">
+                            <button class="collapsible-toggle" type="button" data-target="#programming-content">Programming</button>
+                            <div class="collapsible-content" id="programming-content">
+                                <ul>
+                                    <li><i class="bi bi-filetype-html icon"></i>HTML</li>
+                                    <li><i class="bi bi-filetype-css icon"></i>CSS</li>
+                                    <li><i class="bi bi-filetype-js icon"></i>JavaScript</li>
+                                    <li><i class="bi bi-filetype-tsx icon"></i>TypeScript</li>
+                                    <li><i class="bi bi-filetype-py icon"></i>Python</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <hr class="divider">
 
-                <div class="sliderbox"><div class="slider"></div></div>
+                <div class="sliderbox reveal"><div class="slider"></div></div>
                 <hr class="divider">
 
-                <h4 id="lastupdated" style="text-align: center;"></h4> <!-- Centered last updated -->
+                <h4 id="lastupdated" style="text-align: center;"></h4>
             </div>
         </div>
     </div>
 
-    <footer class="footer-content"> <!-- Changed from center, added class -->
+    <footer class="footer-content">
         <p class="pop type2" style="font-size:11pt; margin-top:0;"><a href="https://github.com/t7ru/t7ru.github.io" class="no"><u>this site is completely open source!</u></a></p>
-        <p class="subtitle" style="text-align: center; margin-bottom:0;">it's also best seen on pc...</p> <!-- Changed from p1 -->
+        <p class="subtitle" style="text-align: center; margin-bottom:0;">it's also best seen on pc...</p>
     </footer>
 </body>
-
-<script>
-    particlesJS.load("particles-js-socials", "/particles.json", function() {
-    });
-</script>
 </html>
