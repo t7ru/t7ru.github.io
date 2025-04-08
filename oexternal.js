@@ -23,52 +23,49 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(el);
     });
 
-    // Collapsible elements
-    const toggles = document.querySelectorAll('.collapsible-toggle');
+  // Collapsible elements
+  const toggles = document.querySelectorAll('.collapsible-toggle');
+  
+  toggles.forEach(function(toggle) {
+    const targetId = toggle.getAttribute('data-target');
+    if (!targetId) return;
     
-    toggles.forEach(function(toggle) {
-        const targetId = toggle.getAttribute('data-target');
-        if (!targetId) return;
+    const content = document.querySelector(targetId);
+    if (!content) return;
+    if (!toggle.classList.contains('active')) {
+      content.style.maxHeight = '0px';
+      content.style.paddingTop = '0';
+      content.style.paddingBottom = '0';
+    } else {
+      content.style.paddingTop = '10px';
+      content.style.paddingBottom = '10px';
+      content.style.maxHeight = (content.scrollHeight + 20) + 'px';
+    }
+    
+    toggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const currentContent = document.querySelector(this.getAttribute('data-target'));
+      if (!currentContent) return;
+      
+      if (currentContent.style.maxHeight && currentContent.style.maxHeight !== '0px') {
+        currentContent.style.paddingTop = '0';
+        currentContent.style.paddingBottom = '0';
         
-        const content = document.querySelector(targetId);
-        if (!content) return;
-
-        if (!toggle.classList.contains('active')) {
-            content.style.maxHeight = '0px';
-            content.style.paddingTop = '0';
-            content.style.paddingBottom = '0';
-        } else {
-            content.style.paddingTop = '10px';
-            content.style.paddingBottom = '10px';
-            content.style.maxHeight = (content.scrollHeight + 20) + 'px';
-        }
+        void currentContent.offsetWidth;
         
-        toggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            const currentContent = document.querySelector(this.getAttribute('data-target'));
-            if (!currentContent) return;
-            
-            if (currentContent.style.maxHeight && currentContent.style.maxHeight !== '0px') {
-                // Collapse
-                currentContent.style.maxHeight = '0px';
-                currentContent.addEventListener('transitionend', function handler() {
-                    if (!toggle.classList.contains('active')) {
-                        currentContent.style.paddingTop = '0';
-                        currentContent.style.paddingBottom = '0';
-                    }
-                    currentContent.removeEventListener('transitionend', handler);
-                }, { once: true });
-            } else {
-                currentContent.style.paddingTop = '10px';
-                currentContent.style.paddingBottom = '10px';
-
-                requestAnimationFrame(() => {
-                    // Use scrollHeight + buffer to account for margins
-                    currentContent.style.maxHeight = (currentContent.scrollHeight + 20) + 'px';
-                });
-            }
+        currentContent.style.maxHeight = '0px';
+      } else {
+        currentContent.style.paddingTop = '10px';
+        currentContent.style.paddingBottom = '10px';
+        
+        void currentContent.offsetWidth;
+        
+        requestAnimationFrame(() => {
+          currentContent.style.maxHeight = (currentContent.scrollHeight + 20) + 'px';
         });
+      }
     });
+  });
 
     // Particles
     particlesJS.load("particles-js-socials", "/particles.json", function() {
