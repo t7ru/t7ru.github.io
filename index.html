@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="anims.css">
-        <title>Tofu's Stuffs</title>
-        <link rel="icon" type="image/png" href="/assets/favicon.png">
-        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-        <link rel="shortcut icon" href="/assets/favicon.ico">
-        <link rel="apple-touch-icon" href="/assets/favicon.png">
-        <meta charset="UTF-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
-        </style>
+    <link rel="stylesheet" href="mainnew.css">
+    <link rel="stylesheet" href="anims.css">        
     <script src="oexternal.js"></script>
-    <script src="hovertotap.js"></script> 
+    <script src="hovertotap.js"></script>
     <script src="lastupdated.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>particlesJS.load("particles-js", "particles.json");</script>
-    </head>
-    <body>
-        <div class="whitespace whitebox reveal">
-            <h1 style="margin-bottom: 5px;"><i>Whose eyes are those eyes?</i></h1>
-            <p1>"wth r u talking about bro"</p1>
-            <line1 style="bottom:-10px;"></line1>
-                <p>Ello, I'm Tofu also 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- particles script needs to target specific container now -->
+</head>
+<body>
+    <div class="main-layout">
+        <!-- Left Sticky Column -->
+        <div class="left-column reveal">
+            <div class="flexbox" style="justify-content: center;"> <!-- This flexbox now just holds image and socials -->
+                <span class="hovercon" onclick="toggleHover(this)">
+                    <div class="box3">
+                        <img src="/assets/sarai.png" alt="Sarai" class="imgh"> <!-- Added alt text -->
+                    </div>
+                    <span class="hovermsg">
+                    Hashigami Sarai from Science Adventure's Occultic;Nine.
+                    </span>
+                </span>
+                <hr class="divider"> <!-- Added divider -->
+                <div class="box2"> <!-- Socials Box -->
+                    <div id="particles-js-socials"></div>
+                    <h1>My Socials</h1>
+                    <!-- Using Bootstrap Icons -->
+                    <span class="pop"><a href="https://discord.com/users/380694434980954114" class="no type2"><i class="bi bi-discord icon"></i>Discord</a></span>
+                    <span class="pop"><a href="https://community.fandom.com/wiki/User:Gabonnie" class="no type2"><img src="assets/fandomlogo.png" class="icon">Fandom</a></span>
+                    <span class="pop"><a href="https://github.com/t7ru" class="no type2"><i class="bi bi-github icon"></i>GitHub</a></span>
+                    <span class="pop"><a href="https://www.instagram.com/gia.benn" class="no type2"><i class="bi bi-instagram icon"></i>Instagram</a></span>
+                    <span class="pop"><a href="https://steamcommunity.com/id/bengiaa" class="no type2"><i class="bi bi-steam icon"></i>Steam</a></span>
+                    <span class="pop"><a href="https://x.com/taotoru" class="no type2"><i class="bi bi-twitter-x icon"></i>X</a></span> <!-- Changed icon -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Floating Navigation Box -->
+            <div class="floating-nav reveal">
+                <a href="https://t7ru.atabook.org" class="pop type2 noex" title="Guestbook"><img src="assets/tofu.png" alt="Guestbook"></a> <!-- Added title -->
+                <a href="/interests" class="pop type2 noex" title="Interests"><img src="assets/tofu2.png" alt="Interests"></a> <!-- Added title -->
+                <a href="/memoir" class="pop type2 noex" title="Memoir"><img src="assets/memoirlogo.png" alt="Memoir"></a> <!-- Added title -->
+                <a href="https://tds-editor.live/" class="pop type2" title="TDS Editor"><img src="assets/stateditor.png" alt="TDS Editor"></a> <!-- Added title -->
+            </div>
+
+            <!-- Main Content Box -->
+            <div class="main-content reveal">
+                <!-- Intro Section -->
+                <div>
+                    <h1 style="margin-bottom: 5px; text-align: center;"><i>Whose eyes are those eyes?</i></h1>
+                    <p class="subtitle">"wth r u talking about bro"</p>
+                </div>
+                <hr class="divider">
+
+                <!-- Consolidated About Me Section -->
+                <h2>About Me</h2>
+                <p>
+                    Ello, I'm Tofu, also
                     <span class="hovercon" onclick="toggleHover(this)">
                         known as Toru.
                         <span class="hovermsg">
                         (we don't talk about my 1000 other names lololol.)
                         </span>
-                    </span> 
-                    <br/>Part-time philosopher, full-time delusional.
-                    <div style="justify-content: space-around;" class="flexbox">
-                        <span class="hovercon" onclick="toggleHover(this)">
-                            <div class="box3">
-                                <img src="/assets/sarai.png" style="width: 130px;">
-                            </div>
-                            <span class="hovermsg">
-                            Hashigami Sarai from Science Adventure's Occultic;Nine.
-                            </span>
-                        </span>
-                        <div class="box2"><div id="particles-js"></div>
-                        <h1 style="text-align: center; margin-bottom: 1.8%">My Socials</h1>
-                        <span class="pop"><a href="https://discord.com/users/380694434980954114" class="no type2"><img src="assets/discordlogo.png" class="icon">Discord</a></span>
-                        <br/><span class="pop"><a href="https://community.fandom.com/wiki/Template:User:Gabonnie/Portal" class="no type2"><img src="assets/fandomlogo.png" class="icon">Fandom</a></span>
-                        <br/><span class="pop"><a href="https://github.com/t7ru" class="no type2"><img src="assets/githublogo.png" class="icon">GitHub</a></span>
-                        <br/><span class="pop"><a href="https://www.instagram.com/gia.benn" class="no type2"><img src="assets/instalogo.png" class="icon">Instagram</a></span>
-                        <br/><span class="pop"><a href="https://steamcommunity.com/id/bengiaa" class="no type2"><img src="assets/steamlogo.png" class="icon">Steam</a></span>
-                        <br/><span class="pop"><a href="https://x.com/taotoru" class="no type2"><img src="assets/xlogo.png" class="icon">X</a></span>
+                    </span>
+                    Part-time philosopher, full-time delusional.
                 </p>
+                <ul class="about-list"> <!-- Added class for styling -->
+                    <li><i class="bi bi-gender-male icon"></i>I'm a dude</li> <!-- Added icon -->
+                    <li>
+                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-hearts icon"></i>I like animals<span class="hovermsg"> <!-- Added icon -->
+                            I LIKE THEM PLATONICALLY, I AM NOT A FURRY PLEASE I SWEAR.</span>
+                        </span>
+                    </li>
+                    <li><i class="bi bi-book-half icon"></i>I'm studying biology</li> <!-- Added icon -->
+                    <li><i class="bi bi-easel icon"></i>Really good at image editing</li> <!-- Added icon -->
+                    <li>
+                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-code-slash icon"></i>Coding is my hobby<span class="hovermsg"> <!-- Added icon -->
+                            Especially CSS and HTML—I learned those from working on wikis.</span>
+                        </span>
+                    </li>
+                    <li><i class="bi bi-stars icon"></i>Massive SciADV glazer</li> <!-- Added icon -->
+                    <li><i class="bi bi-hospital icon"></i>Probably should be locked up in an asylum</li> <!-- Added icon -->
+                    <li>
+                        <span class="hovercon" onclick="toggleHover(this)"><i class="bi bi-chat-dots icon"></i>Great person to talk to<span class="hovermsg"> <!-- Added icon -->
+                            Alledgedly, so kindly do not quote me on this.</span>
+                        </span>
+                    </li>
+                </ul>
+                <hr class="divider">
+
+                <!-- Slider -->
+                <div class="sliderbox"><div class="slider"></div></div>
+                <hr class="divider">
+
+                <h4 id="lastupdated" style="text-align: center;"></h4> <!-- Centered last updated -->
             </div>
         </div>
-        <br/>
-            <line1 class="reveal"></line1>
-            <h1 class="reveal"><a href="https://t7ru.atabook.org" class="pop type2 noex"><img src="assets/tofu.png" width="50%"></a></h1>
-            <p class="reveal">Interested in signing my guestbook, or maybe you're feeling mischevious and wanna leave a mean message to me? Then go right ahead, tap on the image above me. 🦭</p>
-            <line1 class="reveal"></line1>
-            <br/><div class="sliderbox reveal"><div class="slider"></div></div><br/>
-            <line1 class="reveal"></line1>
-            <h1 class="reveal">About Me</h1>
-            <p class="reveal">
-                • I'm a dude<br/>
-                <span class="hovercon" onclick="toggleHover(this)">• I like animals<span class="hovermsg">
-                    I LIKE THEM PLATONICALLY, I AM NOT A FURRY PLEASE I SWEAR.</span>
-                    </span><br/>
-                • I'm studying biology<br/>
-                • Really good at image editing<br/>
-                <span class="hovercon" onclick="toggleHover(this)">• Coding is my hobby<span class="hovermsg">
-                    Especially CSS and HTML—I learned those from working on wikis.</span>
-                    </span><br/>
-                • Massive SciADV glazer<br/>
-                • Probably should be locked up in an asylum<br/>
-                <span class="hovercon" onclick="toggleHover(this)">• Great person to talk to<span class="hovermsg">
-                    Alledgedly, so kindly do not quote me on this.</span>
-                    </span>
-            </p>
-            <line1 class="reveal"></line1>
-            <h1 class="reveal"><a href="/interests" class="pop type2 noex"><img src="assets/tofu2.png" width="50%"></a></h1>
-            <p class="reveal">This is where I list vidya games that I really like. Check them out if you have the time, I genuinely recommend giving the favorites a try at least once.<br/><br/>
-            Tap on the image above to check the list.<br/>
-            <p1 style="text-align: center; font-style:italic">P.S. I'm not responsible for any emotional trauma you may experience from playing them.</p1>
-            </p>
+    </div>
 
-            <line1 class="reveal"></line1>
-            <h1 class="reveal"><a href="/memoir" class="pop type2 noex"><img src="assets/memoirlogo.png" width="50%"></a></h1>
-            <p class="reveal">A novella I am currently <span class="hovercon" onclick="toggleHover(this)">working on<span class="hovermsg">Hopefully, I can get it done before 2025 ends.</span></span>, the story follows Toone, a person who suffers from a mental disorder.<br/><br/>
-            Tap on the image above to see the novella.<br/>
-            </p>
-
-            <line1 class="reveal"></line1>
-            <h1 class="reveal"><a href="https://tds-editor.live/" class="pop type2"><img src="assets/stateditor.png" width="50%"></a></h1>
-            <p class="reveal">A statistics editor for the Roblox game Tower Defense Simulator. It is still being updated, everything about it can be found on its <a href="https://github.com/t7ru/TDS-Stats-Editor" class="no" style="text-decoration: underline;">GitHub</a></span> page.<br/><br/>
-            You know what to do to access it smh my head.<br/>
-            </p>
-            <line1 class="reveal"></line1>
-            <h4 id="lastupdated"></h4>
-        </div>
-        <center><!-- no idea why text align doesn't work-->
-            <p class="pop type2" style="font-size:11pt; color:white; text-shadow: 0 0 5px gray, 0 0 8px black; margin-top:18px;"><a href="https://github.com/t7ru/t7ru.github.io" class="no"><u>this site is completely open source!</u></a></p><br/>
-            <p1 style="text-align: center; text-shadow: 0 0 5px gray, 0 0 8px rgb(255, 255, 255); margin-bottom:18px;">it's also best seen on pc...</p1>
-        </center>
-    </body>
+    <!-- Footer -->
+    <footer class="footer-content"> <!-- Changed from center, added class -->
+        <p class="pop type2" style="font-size:11pt; margin-top:0;"><a href="https://github.com/t7ru/t7ru.github.io" class="no"><u>this site is completely open source!</u></a></p>
+        <p class="subtitle" style="text-align: center; margin-bottom:0;">it's also best seen on pc...</p> <!-- Changed from p1 -->
+    </footer>
+    <script>
+        particlesJS.load("particles-js-socials", "/particles.json", function() {
+        });
+    </script>
+</body>
 </html>
