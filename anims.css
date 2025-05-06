@@ -41,23 +41,14 @@
 	transform: translateY(0);
 }
 
-.tag {
-	transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-
-.tag:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	background-color: #f0f0f0;
-}
-
 .image-container img {
 	transition: transform 0.5s, filter 0.5s;
 }
 
-.image-container:hover img {
+.image-container > img:hover {
 	transform: scale(1.03);
 	filter: brightness(1.1);
+	transform: translateY(-3px);
 }
 
 .buy-button {
