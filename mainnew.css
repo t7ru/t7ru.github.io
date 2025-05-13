@@ -641,3 +641,23 @@ hr.divider {
 		height: 1.1em;
 	}
 }
+
+/* Style for the icon container */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.icon-container i {
+    font-size: 50px;
+    transition: transform 0.3s ease;
+	filter: grayscale(1) brightness(0.1);
+}
+
+.icon-container i:hover {
+    transform: scale(1.2);
+	filter: none;
+}
