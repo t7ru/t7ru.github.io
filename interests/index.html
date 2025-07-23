@@ -1,758 +1,1003 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="/main.css">
-        <link rel="stylesheet" href="/tags.css">
-        <link rel="stylesheet" href="/anims.css">
-        <title>Tofu's Interests</title>
-        <link rel="icon" type="image/png" href="/assets/favicon.png">
-        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-        <link rel="shortcut icon" href="/assets/favicon.ico">
-        <link rel="apple-touch-icon" href="/assets/favicon.png">
-        <meta charset="UTF-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
-        </style>
+  <head>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/tags.css" />
+    <link rel="stylesheet" href="/anims.css" />
+    <title>Tofu's Interests</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap");
+    </style>
     <script src="/oexternal.js"></script>
-    <script src="/hovertotap.js"></script> 
+    <script src="/hovertotap.js"></script>
     <script src="/lastupdated.js"></script>
     <script src="/popup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>particlesJS.load("particles-js", "/particles.json");</script>
-    </head>
-    <body>
-        <center><img src="/assets/tofu2.png" width="70%" style="max-width:480px; max-height: 221px"></center>
-        <div class="whitespace whitebox reveal" style="text-align:left;">
-            « <u><a href="/" class="no noex">Back to website</a></u>
+    <script>
+      particlesJS.load("particles-js", "/particles.json");
+    </script>
+  </head>
+  <body>
+    <center>
+      <img
+        src="/assets/tofu2.png"
+        width="70%"
+        style="max-width: 480px; max-height: 221px"
+      />
+    </center>
+    <div class="whitespace whitebox reveal" style="text-align: left">
+      « <u><a href="/" class="no noex">Back to website</a></u>
+    </div>
+    <br />
+    <div class="whitespace whitebox reveal">
+      <h1 style="margin-bottom: 5px">
+        <i>Taking a new step, uttering a new word, is what people fear most.</i>
+      </h1>
+      <p1>"damn thats wise bro whered u copy it from"</p1>
+      <line1 style="bottom: -10px"></line1>
+      <h2 style="margin-bottom: 2%" class="reveal">All-Time Favorites</h2>
+      <div class="image-grid reveal">
+        <div class="image-container">
+          <img src="/assets/LibraryArt/AATrilogy.png" alt="AATrilogy" />
+          <div class="tag-container">
+            <div class="tag aa">AA</div>
+            <div class="tag">Visual Novel</div>
+            <button class="buy-button" onclick="openPopup('popup4')">
+              Purchase
+            </button>
+          </div>
         </div>
-            <br/>
-        <div class="whitespace whitebox reveal">
-            <h1 style="margin-bottom: 5px;"><i>Taking a new step, uttering a new word, is what people fear most.</i></h1>
-            <p1>"damn thats wise bro whered u copy it from"</p1>
-            <line1 style="bottom:-10px;"></line1>
-            <h2 style="margin-bottom:2%" class="reveal">All-Time Favorites</h2>
-            <div class="image-grid reveal">
-                <div class="image-container">
-                    <img src="/assets/LibraryArt/AATrilogy.png" alt="AATrilogy">
-                    <div class="tag-container">
-                      <div class="tag aa">AA</div>
-                      <div class="tag">Visual Novel</div>
-                      <button class="buy-button" onclick="openPopup('popup4')">Purchase</button>
-                    </div>
-                  </div>
-                  <div class="image-container">
-                    <img src="https://t.vndb.org/cv/63/75863.jpg" alt="CODE">
-                    <div class="tag-container">
-                      <div class="tag sciadv">SciADV</div>
-                      <div class="tag">Visual Novel</div>
-                      <button class="buy-button" onclick="openPopup('popup3')">Purchase</button>
-                    </div>
-                </div>
-                  <div class="image-container">
-                    <img src="https://t.vndb.org/cv/05/75805.jpg" alt="NoAH">
-                    <div class="tag-container">
-                      <div class="tag sciadv">SciADV</div>
-                      <div class="tag">Visual Novel</div>
-                      <button class="buy-button" onclick="openPopup('popup5')">Purchase</button>
-                    </div>
-                  </div>
-                  <div class="image-container">
-                    <img src="/assets/LibraryArt/EoS.png" alt="EoS">
-                    <div class="tag-container">
-                      <div class="tag pkmn">PKMN</div>
-                      <div class="tag">Mystery Dungeon</div>
-                      <div class="tag unav">Unavailable</div>
-                    </div>
-                  </div>
-                  <div class="image-container">
-                    <img src="/assets/LibraryArt/RE2.png" alt="RE2">
-                    <div class="tag-container">
-                        <div class="tag re">RE</div>
-                        <div class="tag">Survival Horror</div>
-                        <button class="buy-button" onclick="openPopup('popup1')">Purchase</button>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img src="/assets/LibraryArt/RE4.png" alt="RE4">
-                    <div class="tag-container">
-                        <div class="tag re">RE</div>
-                        <div class="tag">Survival Horror</div>
-                        <button class="buy-button" onclick="openPopup('popup2')">Purchase</button>
-                    </div>
-                </div>
-                  <div class="image-container">
-                    <img src="https://t.vndb.org/cv/19/77819.jpg" alt="Gate">
-                    <div class="tag-container">
-                      <div class="tag sciadv">SciADV</div>
-                      <div class="tag">Visual Novel</div>
-                      <button class="buy-button" onclick="openPopup('popup6')">Purchase</button>
-                    </div>
-                  </div>
-                  <div class="image-container">
-                    <img src="/assets/LibraryArt/TWD.jpeg" alt="TWD">
-                    <div class="tag-container">
-                      <div class="tag twd">TWD</div>
-                      <div class="tag">Episodic</div>
-                      <button class="buy-button" onclick="openPopup('popup7')">Purchase</button>
-                    </div>
-                  </div>
-                  <div class="image-container">
-                    <img src="/assets/LibraryArt/TWEWY.png" alt="TWEWY">
-                    <div class="tag-container">
-                      <div class="tag twewy">TWEWY</div>
-                      <div class="tag">JRPG</div>
-                      <button class="buy-button" onclick="openPopup('popup8')">Purchase</button>
-                    </div>
-                  </div>              
-            </div>
-            <br/>
-            <line1 style="bottom:-10px;" class="reveal"></line1>
-            <h2 style="margin-bottom:2%" class="reveal">Recommendations</h2>
-            <div class="image-grid gridsmaller reveal">
-              <div class="image-container">
-                <img src="/assets/LibraryArt/AK.png" alt="AK">
-                <div class="tag-container">
-                  <div class="tag ak">Arkham</div>
-                  <div class="tag">Action</div>
-                  <button class="buy-button" onclick="openPopup('popup9')">Purchase</button>
-                </div>
-              </div>
-              <div class="image-container">
-                <img src="/assets/LibraryArt/AO.png" alt="AO">
-                <div class="tag-container">
-                  <div class="tag ak">Arkham</div>
-                  <div class="tag">Action</div>
-                  <button class="buy-button" onclick="openPopup('popup10')">Purchase</button>
-                </div>
-              </div>
-                <div class="image-container">
-                  <img src="https://t.vndb.org/cv/35/75835.jpg" alt="Child">
-                  <div class="tag-container">
-                    <div class="tag sciadv">SciADV</div>
-                    <div class="tag">Visual Novel</div>
-                    <button class="buy-button" onclick="openPopup('popup11')">Purchase</button>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/NEO.png" alt="neo">
-                  <div class="tag-container">
-                    <div class="tag twewy">TWEWY</div>
-                    <div class="tag">JRPG</div>
-                    <button class="buy-button" onclick="openPopup('popup21')">Purchase</button>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/OS.png" alt="OS">
-                  <div class="tag-container">
-                    <div class="tag os">OneShot</div>
-                    <div class="tag">Adventure</div>
-                    <button class="buy-button" onclick="openPopup('popup12')">Purchase</button>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/PD2.png" alt="PD2">
-                  <div class="tag-container">
-                    <div class="tag pd">PAYDAY</div>
-                    <div class="tag">FPS</div>
-                    <button class="buy-button" onclick="openPopup('popup13')">Purchase</button>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/PD3.jpg" alt="PD3">
-                  <div class="tag-container">
-                    <div class="tag pd">PAYDAY</div>
-                    <div class="tag">FPS</div>
-                    <button class="buy-button" onclick="openPopup('popup14')">Purchase</button>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/Platinum.png" alt="Plat">
-                  <div class="tag-container">
-                    <div class="tag pkmn">PKMN</div>
-                    <div class="tag">JRPG</div>
-                    <div class="tag unav">Unavailable</div>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/Scarlet.jpg" alt="Scarlet">
-                  <div class="tag-container">
-                    <div class="tag pkmn">PKMN</div>
-                    <div class="tag">JRPG</div>
-                    <button class="buy-button" onclick="openPopup('popup17')">Purchase</button>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/Soul.png" alt="Soul">
-                  <div class="tag-container">
-                    <div class="tag pkmn">PKMN</div>
-                    <div class="tag">JRPG</div>
-                    <div class="tag unav">Unavailable</div>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/UM.png" alt="UM">
-                  <div class="tag-container">
-                    <div class="tag pkmn">PKMN</div>
-                    <div class="tag">JRPG</div>
-                    <button class="buy-button" onclick="openPopup('popup23')">Purchase</button>
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="/assets/LibraryArt/RE3.png" alt="RE3">
-                  <div class="tag-container">
-                    <div class="tag re">RE</div>
-                    <div class="tag">Survival Horror</div>
-                    <button class="buy-button" onclick="openPopup('popup15')">Purchase</button>
-                  </div>
-                </div>
-                <div class="image-container">
-                    <img src="/assets/LibraryArt/RE3o.png" alt="RE3o">
-                    <div class="tag-container">
-                      <div class="tag re">RE</div>
-                      <div class="tag">Survival Horror</div>
-                      <button class="buy-button" onclick="openPopup('popup16')">Purchase</button>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img src="/assets/LibraryArt/RE4o.png" alt="RE4o">
-                    <div class="tag-container">
-                      <div class="tag re">RE</div>
-                      <div class="tag">Survival Horror</div>
-                      <button class="buy-button" onclick="openPopup('popup18')">Purchase</button>
-                    </div>
-                  </div>
-                 <div class="image-container">
-                    <img src="https://t.vndb.org/cv/54/75854.jpg" alt="Notes">
-                    <div class="tag-container">
-                      <div class="tag sciadv">SciADV</div>
-                      <div class="tag">Visual Novel</div>
-                      <button class="buy-button" onclick="openPopup('popup19')">Purchase</button>
-                    </div>
-                 </div>
-                <div class="image-container">
-                    <img src="https://t.vndb.org/cv/34/75834.jpg" alt="Gate0">
-                    <div class="tag-container">
-                      <div class="tag sciadv">SciADV</div>
-                      <div class="tag">Visual Novel</div>
-                      <button class="buy-button" onclick="openPopup('popup20')">Purchase</button>
-                    </div>
-                  </div>
-                  <div class="image-container">
-                    <img src="/assets/LibraryArt/OoT.png" alt="oot">
-                    <div class="tag-container">
-                      <div class="tag tloz">TLoZ</div>
-                      <div class="tag">Action</div>
-                      <button class="buy-button" onclick="openPopup('popup24')">Purchase</button>
-                    </div>
-                  </div>
-                  <div class="image-container">
-                    <img src="/assets/LibraryArt/YTTD.png" alt="YTTD">
-                    <div class="tag-container">
-                      <div class="tag yttd">YTTD</div>
-                      <div class="tag">Visual Novel</div>
-                      <button class="buy-button" onclick="openPopup('popup22')">Purchase</button>
-                    </div>
-                  </div>
-              </div>
-            <br/>
-            <line1 style="bottom:-10px;" class="reveal"></line1>
-            <h3 style="margin-bottom: 2%;" class="reveal">Tags</h3>
-            <div class="reveal">
-                <div class="tag ak">Batman: Arkham</div>
-                <div class="tag aa">Ace Attorney</div>
-                <div class="tag os">OneShot</div>
-                <div class="tag pd">PAYDAY</div>
-                <div class="tag pkmn">Pokémon</div>
-                <div class="tag re">Resident Evil</div>
-                <div class="tag sciadv">Science Adventure</div>
-                <div class="tag tloz">The Legend of Zelda</div>
-                <div class="tag twd">The Walking Dead: The Telltale Series</div>
-                <div class="tag twewy">The World Ends with You</div>
-                <div class="tag yttd">Your Turn to Die</div><br/>
-            </div>
-            <line1 class="reveal"></line1>
-            <h4 id="lastupdated" class="reveal"></h4>
+        <div class="image-container">
+          <img src="https://t.vndb.org/cv/63/75863.jpg" alt="CODE" />
+          <div class="tag-container">
+            <div class="tag sciadv">SciADV</div>
+            <div class="tag">Visual Novel</div>
+            <button class="buy-button" onclick="openPopup('popup3')">
+              Purchase
+            </button>
+          </div>
         </div>
-        <center><!-- no idea why text align doesn't work-->
-            <p class="pop type2" style="font-size:11pt; color:white; text-shadow: 0 0 5px gray, 0 0 8px black; margin-top:18px;"><a href="https://github.com/t7ru/t7ru.github.io" class="no"><u>this site is completely open source!</u></a></p>
-            <p1 style="text-align: center; text-shadow: 0 0 5px gray, 0 0 8px rgb(255, 255, 255); margin-bottom:18px;">it's also best seen on pc...</p1>
-        </center>
-    </body>
+        <div class="image-container">
+          <img src="https://t.vndb.org/cv/05/75805.jpg" alt="NoAH" />
+          <div class="tag-container">
+            <div class="tag sciadv">SciADV</div>
+            <div class="tag">Visual Novel</div>
+            <button class="buy-button" onclick="openPopup('popup5')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/EoS.png" alt="EoS" />
+          <div class="tag-container">
+            <div class="tag pkmn">PKMN</div>
+            <div class="tag">Mystery Dungeon</div>
+            <div class="tag unav">Unavailable</div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/RE2.png" alt="RE2" />
+          <div class="tag-container">
+            <div class="tag re">RE</div>
+            <div class="tag">Survival Horror</div>
+            <button class="buy-button" onclick="openPopup('popup1')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/RE4.png" alt="RE4" />
+          <div class="tag-container">
+            <div class="tag re">RE</div>
+            <div class="tag">Survival Horror</div>
+            <button class="buy-button" onclick="openPopup('popup2')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://t.vndb.org/cv/19/77819.jpg" alt="Gate" />
+          <div class="tag-container">
+            <div class="tag sciadv">SciADV</div>
+            <div class="tag">Visual Novel</div>
+            <button class="buy-button" onclick="openPopup('popup6')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/TWD.jpeg" alt="TWD" />
+          <div class="tag-container">
+            <div class="tag twd">TWD</div>
+            <div class="tag">Episodic</div>
+            <button class="buy-button" onclick="openPopup('popup7')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/TWEWY.png" alt="TWEWY" />
+          <div class="tag-container">
+            <div class="tag twewy">TWEWY</div>
+            <div class="tag">JRPG</div>
+            <button class="buy-button" onclick="openPopup('popup8')">
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <line1 style="bottom: -10px" class="reveal"></line1>
+      <h2 style="margin-bottom: 2%" class="reveal">Recommendations</h2>
+      <div class="image-grid gridsmaller reveal">
+        <div class="image-container">
+          <img src="/assets/LibraryArt/AK.png" alt="AK" />
+          <div class="tag-container">
+            <div class="tag ak">Arkham</div>
+            <div class="tag">Action</div>
+            <button class="buy-button" onclick="openPopup('popup9')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/AO.png" alt="AO" />
+          <div class="tag-container">
+            <div class="tag ak">Arkham</div>
+            <div class="tag">Action</div>
+            <button class="buy-button" onclick="openPopup('popup10')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://t.vndb.org/cv/35/75835.jpg" alt="Child" />
+          <div class="tag-container">
+            <div class="tag sciadv">SciADV</div>
+            <div class="tag">Visual Novel</div>
+            <button class="buy-button" onclick="openPopup('popup11')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/NEO.png" alt="neo" />
+          <div class="tag-container">
+            <div class="tag twewy">TWEWY</div>
+            <div class="tag">JRPG</div>
+            <button class="buy-button" onclick="openPopup('popup21')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/OS.png" alt="OS" />
+          <div class="tag-container">
+            <div class="tag os">OneShot</div>
+            <div class="tag">Adventure</div>
+            <button class="buy-button" onclick="openPopup('popup12')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/PD2.png" alt="PD2" />
+          <div class="tag-container">
+            <div class="tag pd">PAYDAY</div>
+            <div class="tag">FPS</div>
+            <button class="buy-button" onclick="openPopup('popup13')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/PD3.jpg" alt="PD3" />
+          <div class="tag-container">
+            <div class="tag pd">PAYDAY</div>
+            <div class="tag">FPS</div>
+            <button class="buy-button" onclick="openPopup('popup14')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/Platinum.png" alt="Plat" />
+          <div class="tag-container">
+            <div class="tag pkmn">PKMN</div>
+            <div class="tag">JRPG</div>
+            <div class="tag unav">Unavailable</div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/Scarlet.jpg" alt="Scarlet" />
+          <div class="tag-container">
+            <div class="tag pkmn">PKMN</div>
+            <div class="tag">JRPG</div>
+            <button class="buy-button" onclick="openPopup('popup17')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/Soul.png" alt="Soul" />
+          <div class="tag-container">
+            <div class="tag pkmn">PKMN</div>
+            <div class="tag">JRPG</div>
+            <div class="tag unav">Unavailable</div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/UM.png" alt="UM" />
+          <div class="tag-container">
+            <div class="tag pkmn">PKMN</div>
+            <div class="tag">JRPG</div>
+            <button class="buy-button" onclick="openPopup('popup23')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/RE3.png" alt="RE3" />
+          <div class="tag-container">
+            <div class="tag re">RE</div>
+            <div class="tag">Survival Horror</div>
+            <button class="buy-button" onclick="openPopup('popup15')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/RE3o.png" alt="RE3o" />
+          <div class="tag-container">
+            <div class="tag re">RE</div>
+            <div class="tag">Survival Horror</div>
+            <button class="buy-button" onclick="openPopup('popup16')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/RE4o.png" alt="RE4o" />
+          <div class="tag-container">
+            <div class="tag re">RE</div>
+            <div class="tag">Survival Horror</div>
+            <button class="buy-button" onclick="openPopup('popup18')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://t.vndb.org/cv/54/75854.jpg" alt="Notes" />
+          <div class="tag-container">
+            <div class="tag sciadv">SciADV</div>
+            <div class="tag">Visual Novel</div>
+            <button class="buy-button" onclick="openPopup('popup19')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://t.vndb.org/cv/34/75834.jpg" alt="Gate0" />
+          <div class="tag-container">
+            <div class="tag sciadv">SciADV</div>
+            <div class="tag">Visual Novel</div>
+            <button class="buy-button" onclick="openPopup('popup20')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/OoT.png" alt="oot" />
+          <div class="tag-container">
+            <div class="tag tloz">TLoZ</div>
+            <div class="tag">Action</div>
+            <button class="buy-button" onclick="openPopup('popup24')">
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="/assets/LibraryArt/YTTD.png" alt="YTTD" />
+          <div class="tag-container">
+            <div class="tag yttd">YTTD</div>
+            <div class="tag">Visual Novel</div>
+            <button class="buy-button" onclick="openPopup('popup22')">
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <line1 style="bottom: -10px" class="reveal"></line1>
+      <h3 style="margin-bottom: 2%" class="reveal">Tags</h3>
+      <div class="reveal">
+        <div class="tag ak">Batman: Arkham</div>
+        <div class="tag aa">Ace Attorney</div>
+        <div class="tag os">OneShot</div>
+        <div class="tag pd">PAYDAY</div>
+        <div class="tag pkmn">Pokémon</div>
+        <div class="tag re">Resident Evil</div>
+        <div class="tag sciadv">Science Adventure</div>
+        <div class="tag tloz">The Legend of Zelda</div>
+        <div class="tag twd">The Walking Dead: The Telltale Series</div>
+        <div class="tag twewy">The World Ends with You</div>
+        <div class="tag yttd">Your Turn to Die</div>
+        <br />
+      </div>
+      <line1 class="reveal"></line1>
+      <h4 id="lastupdated" class="reveal"></h4>
+    </div>
+    <center>
+      <!-- no idea why text align doesn't work-->
+      <p
+        class="pop type2"
+        style="
+          font-size: 11pt;
+          color: white;
+          text-shadow: 0 0 5px gray, 0 0 8px black;
+          margin-top: 18px;
+        "
+      >
+        <a href="https://github.com/t7ru/t7ru.github.io" class="no"
+          ><u>this site is completely open source!</u></a
+        >
+      </p>
+      <p1
+        style="
+          text-align: center;
+          text-shadow: 0 0 5px gray, 0 0 8px rgb(255, 255, 255);
+          margin-bottom: 18px;
+        "
+        >it's also best seen on pc...</p1
+      >
+    </center>
+  </body>
 </html>
 
 <!-- Pop ups (could've used js but im too lazy to fix it now lmao) -->
- <!-- re2 -->
+<!-- re2 -->
 <div id="popup1" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup1')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/3DX7xwk">PlayStation 5</a><br/>
-          • <a href="https://amzn.to/40kpAnF">PlayStation 4</a><br/>
-          • <a href="https://amzn.to/3DTqDDs">Xbox One</a><br/><br/>
-          Canada:<br/>
-          • <a href="https://amzn.to/4gSclkZ">PlayStation 5</a><br/>
-          • <a href="https://amzn.to/4hfxqFI">PlayStation 4</a><br/>
-          • <a href="https://amzn.to/4hdfwUj">Xbox One</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/883710/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup1')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3DX7xwk">PlayStation 5</a><br />
+      • <a href="https://amzn.to/40kpAnF">PlayStation 4</a><br />
+      • <a href="https://amzn.to/3DTqDDs">Xbox One</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4gSclkZ">PlayStation 5</a><br />
+      • <a href="https://amzn.to/4hfxqFI">PlayStation 4</a><br />
+      • <a href="https://amzn.to/4hdfwUj">Xbox One</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/883710/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- re4 -->
 <div id="popup2" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup2')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/4amRML5">PlayStation 5</a><br/>
-          • <a href="https://amzn.to/4jjDqz9">PlayStation 4</a><br/>
-          • <a href="https://amzn.to/3DUZRL0">Xbox Series X</a><br/><br/>
-          Canada:<br/>
-          • <a href="https://amzn.to/4g3RCJQ">PlayStation 5</a><br/>
-          • <a href="https://amzn.to/40fJhwP">PlayStation 4</a><br/>
-          • <a href="https://amzn.to/4fVwZ2p">Xbox Series X</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/2050650/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup2')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/4amRML5">PlayStation 5</a><br />
+      • <a href="https://amzn.to/4jjDqz9">PlayStation 4</a><br />
+      • <a href="https://amzn.to/3DUZRL0">Xbox Series X</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4g3RCJQ">PlayStation 5</a><br />
+      • <a href="https://amzn.to/40fJhwP">PlayStation 4</a><br />
+      • <a href="https://amzn.to/4fVwZ2p">Xbox Series X</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/2050650/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- ac -->
 <div id="popup3" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup3')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/40wCakN">Nintendo Switch</a><br/>
-          • <a href="https://amzn.to/42dJXWf">PlayStation 4</a><br/><br/>
-          Canada:<br/>
-          • <a href="https://amzn.to/4091OL2">Nintendo Switch</a><br/>
-          • <a href="https://amzn.to/4g3TW3w">PlayStation 4</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/2291020/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup3')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/40wCakN">Nintendo Switch</a><br />
+      • <a href="https://amzn.to/42dJXWf">PlayStation 4</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4091OL2">Nintendo Switch</a><br />
+      • <a href="https://amzn.to/4g3TW3w">PlayStation 4</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/2291020/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- aattorney -->
 <div id="popup4" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup4')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/787480/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup4')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/787480/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- noah -->
 <div id="popup5" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup5')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/3PzbMR0">Nintendo Switch (Double Pack)</a><br/><br/>
-          Canada:<br/>
-          • <a href="hhttps://amzn.to/4akxQZd">Nintendo Switch (Double Pack)</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/1961950/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup5')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3PzbMR0">Nintendo Switch (Double Pack)</a
+      ><br /><br />
+      Canada:<br />
+      • <a href="hhttps://amzn.to/4akxQZd">Nintendo Switch (Double Pack)</a
+      ><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/1961950/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- sg -->
 <div id="popup6" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup6')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/3PC5JLS">Nintendo Switch (Elite)</a><br/>
-          • <a href="https://amzn.to/4fX6iu7">PlayStation 4 (Elite)</a><br/><br/>
-          Canada:<br/>
-          • <a href="https://amzn.to/4agZOoM">Nintendo Switch (Elite)</a><br/>
-          • <a href="https://amzn.to/42bdcJ1">PlayStation 4 (Elite)</a><br/>
-          • <a href="https://amzn.to/4heqfxQ">PlayStation 3</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/412830/">Steam</a><br/>
-          • <a href="https://store.steampowered.com/app/819030/">Steam (Elite)</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup6')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3PC5JLS">Nintendo Switch (Elite)</a><br />
+      • <a href="https://amzn.to/4fX6iu7">PlayStation 4 (Elite)</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4agZOoM">Nintendo Switch (Elite)</a><br />
+      • <a href="https://amzn.to/42bdcJ1">PlayStation 4 (Elite)</a><br />
+      • <a href="https://amzn.to/4heqfxQ">PlayStation 3</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/412830/">Steam</a><br />
+      • <a href="https://store.steampowered.com/app/819030/">Steam (Elite)</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- twd -->
 <div id="popup7" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup7')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/42dGzdW">PlayStation 4</a><br/>
-          • <a href="https://amzn.to/3Wm1Fmr">Xbox One</a><br/><br/>
-          Canada:<br/>
-          • <a href="https://amzn.to/40x4yU3">PlayStation 4</a><br/>
-          • <a href="https://amzn.to/3BYxGdz">Xbox One</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/1449690/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup7')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/42dGzdW">PlayStation 4</a><br />
+      • <a href="https://amzn.to/3Wm1Fmr">Xbox One</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/40x4yU3">PlayStation 4</a><br />
+      • <a href="https://amzn.to/3BYxGdz">Xbox One</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/1449690/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- twewy -->
 <div id="popup8" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup8')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/3PC6cO8">Nintendo Switch</a><br/><br/>
-          Canada:<br/>
-          • <a href="https://amzn.to/3WiG0M2">Nintendo Switch</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup8')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3PC6cO8">Nintendo Switch</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/3WiG0M2">Nintendo Switch</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- knight -->
 <div id="popup9" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup9')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/4apDauE">PlayStation 4</a><br/>
-          • <a href="https://amzn.to/3DWyQXs">PlayStation 4 (Collection)</a><br/>
-          • <a href="https://amzn.to/4fTAF4F">Xbox One</a><br/>
-          • <a href="https://amzn.to/4gSghSN">Xbox One (Collection)</a><br/>
-          • <a href="https://amzn.to/4gQraEI">Nintendo Switch (Trilogy)</a><br/><br/>
-          Canada:<br/>
-          • <a href="https://amzn.to/4heozEt">PlayStation 4</a><br/>
-          • <a href="https://amzn.to/4jhR4ml">PlayStation 4 (Collection)</a><br/>
-          • <a href="https://amzn.to/40ktXiz">Xbox One</a><br/>
-          • <a href="https://amzn.to/3Wg4plm">Nintendo Switch (Trilogy)</a><br/><br/>
-          Global<br/>
-          • <a href="https://store.steampowered.com/app/208650/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup9')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/4apDauE">PlayStation 4</a><br />
+      • <a href="https://amzn.to/3DWyQXs">PlayStation 4 (Collection)</a><br />
+      • <a href="https://amzn.to/4fTAF4F">Xbox One</a><br />
+      • <a href="https://amzn.to/4gSghSN">Xbox One (Collection)</a><br />
+      • <a href="https://amzn.to/4gQraEI">Nintendo Switch (Trilogy)</a
+      ><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4heozEt">PlayStation 4</a><br />
+      • <a href="https://amzn.to/4jhR4ml">PlayStation 4 (Collection)</a><br />
+      • <a href="https://amzn.to/40ktXiz">Xbox One</a><br />
+      • <a href="https://amzn.to/3Wg4plm">Nintendo Switch (Trilogy)</a
+      ><br /><br />
+      Global<br />
+      • <a href="https://store.steampowered.com/app/208650/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- origins -->
 <div id="popup10" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup10')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-          United States:<br/>
-          • <a href="https://amzn.to/4agUXnA">PlayStation 3</a><br/>
-          • <a href="https://amzn.to/3PBFuFe">Xbox 360</a><br/>
-          • <a href="https://amzn.to/40nJrT4">Wii U</a><br/><br/>
-          Canada:<br/>
-          • <a href="https://amzn.to/42g0c50">PlayStation 3</a><br/>
-          • <a href="https://amzn.to/3CbZz1N">Wii U</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/209000/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup10')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/4agUXnA">PlayStation 3</a><br />
+      • <a href="https://amzn.to/3PBFuFe">Xbox 360</a><br />
+      • <a href="https://amzn.to/40nJrT4">Wii U</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/42g0c50">PlayStation 3</a><br />
+      • <a href="https://amzn.to/3CbZz1N">Wii U</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/209000/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- Child -->
 <div id="popup11" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup11')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/3PzbMR0">Nintendo Switch (Double Pack)</a><br/>
-        • <a href="https://amzn.to/4gePiA1">PlayStation 4</a><br/><br/>
-        Canada:<br/>
-        • <a href="hhttps://amzn.to/4akxQZd">Nintendo Switch (Double Pack)</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/970570/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup11')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3PzbMR0">Nintendo Switch (Double Pack)</a
+      ><br />
+      • <a href="https://amzn.to/4gePiA1">PlayStation 4</a><br /><br />
+      Canada:<br />
+      • <a href="hhttps://amzn.to/4akxQZd">Nintendo Switch (Double Pack)</a
+      ><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/970570/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- OneShot -->
 <div id="popup12" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup12')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/40eQLAi">Nintendo Switch</a><br/>
-        • <a href="https://amzn.to/4fXmn39">PlayStation 4</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/4gULaGb">Nintendo Switch</a><br/>
-        • <a href="https://amzn.to/4fXAbKT">PlayStation 4</a><br/><br/>
-          Global:<br/>
-          • <a href="https://store.steampowered.com/app/2915460/">Steam</a><br/>
-          • <a href="https://store.steampowered.com/app/420530/">Steam (Original)</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup12')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/40eQLAi">Nintendo Switch</a><br />
+      • <a href="https://amzn.to/4fXmn39">PlayStation 4</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4gULaGb">Nintendo Switch</a><br />
+      • <a href="https://amzn.to/4fXAbKT">PlayStation 4</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/2915460/">Steam</a><br />
+      •
+      <a href="https://store.steampowered.com/app/420530/">Steam (Original)</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- PD2 -->
 <div id="popup13" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup13')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/4aigvAa">PlayStation 4 (Crimewave)</a><br/>
-        • <a href="https://amzn.to/40xTjKX">PlayStation 4 (The Big Score)</a><br/>
-        • <a href="https://amzn.to/4aeA6Bn">PlayStation 3</a><br/>
-        • <a href="https://amzn.to/4gT5fwD">Xbox One (Crimewave)</a><br/>
-        • <a href="https://amzn.to/4jdtbwr">Xbox One (The Big Score)</a><br/>
-        • <a href="https://amzn.to/3DPOSCo">Xbox 360</a><br/>
-        • <a href="https://amzn.to/3C6YyIm">Xbox 360 (Safecracker)</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/3WiFKgb">PlayStation 3</a><br/>
-        • <a href="https://amzn.to/3WHGv2D">Xbox One (Crimewave)</a><br/>
-        • <a href="https://amzn.to/3PzPZZx">Xbox One (The Big Score)</a><br/>
-        • <a href="https://amzn.to/4gQCoJB">Xbox 360</a><br/>
-        • <a href="https://amzn.to/4j9jsr3">Xbox 360 (Safecracker)</a><br/><br/>
-        Global:<br/>
-        • <a href="https://store.steampowered.com/app/218620/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup13')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/4aigvAa">PlayStation 4 (Crimewave)</a><br />
+      • <a href="https://amzn.to/40xTjKX">PlayStation 4 (The Big Score)</a
+      ><br />
+      • <a href="https://amzn.to/4aeA6Bn">PlayStation 3</a><br />
+      • <a href="https://amzn.to/4gT5fwD">Xbox One (Crimewave)</a><br />
+      • <a href="https://amzn.to/4jdtbwr">Xbox One (The Big Score)</a><br />
+      • <a href="https://amzn.to/3DPOSCo">Xbox 360</a><br />
+      • <a href="https://amzn.to/3C6YyIm">Xbox 360 (Safecracker)</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/3WiFKgb">PlayStation 3</a><br />
+      • <a href="https://amzn.to/3WHGv2D">Xbox One (Crimewave)</a><br />
+      • <a href="https://amzn.to/3PzPZZx">Xbox One (The Big Score)</a><br />
+      • <a href="https://amzn.to/4gQCoJB">Xbox 360</a><br />
+      • <a href="https://amzn.to/4j9jsr3">Xbox 360 (Safecracker)</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/218620/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- PD3 -->
 <div id="popup14" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup14')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/3DWjoKX">PlayStation 5</a><br/>
-        • <a href="https://amzn.to/40Caeev">PlayStation 5 (Collector)</a><br/>
-        • <a href="https://amzn.to/3DSqa4p">Xbox Series X</a><br/>
-        • <a href="https://amzn.to/4amljEW">Xbox Series X (Collector)</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/4hdmBUT">PlayStation 5 (Collector)</a><br/>
-        • <a href="https://amzn.to/3DWjzG7">Xbox Series X</a><br/>
-        • <a href="https://amzn.to/3DPPKHa">Xbox Series X (Collector)</a><br/><br/>
-        Global:<br/>
-        • <a href="https://store.steampowered.com/app/1272080/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup14')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3DWjoKX">PlayStation 5</a><br />
+      • <a href="https://amzn.to/40Caeev">PlayStation 5 (Collector)</a><br />
+      • <a href="https://amzn.to/3DSqa4p">Xbox Series X</a><br />
+      • <a href="https://amzn.to/4amljEW">Xbox Series X (Collector)</a
+      ><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4hdmBUT">PlayStation 5 (Collector)</a><br />
+      • <a href="https://amzn.to/3DWjzG7">Xbox Series X</a><br />
+      • <a href="https://amzn.to/3DPPKHa">Xbox Series X (Collector)</a
+      ><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/1272080/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- Scarlet -->
 <div id="popup17" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup17')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/3DYr3bJ">Nintendo Switch</a><br/>
-        • <a href="https://amzn.to/42cFwuE">Nintendo Switch (The Hidden Treasure of Area Zero Bundle)</a><br/>
-        • <a href="https://amzn.to/40gN1OL">Nintendo Switch (Double Pack)</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/4095Ove">Nintendo Switch</a><br/>
-        • <a href="https://amzn.to/40vOT7x">Nintendo Switch (Double Pack)</a><br/>
-        • <a href="https://amzn.to/4jf9Pa2">Nintendo Switch (The Hidden Treasure of Area Zero Bundle)</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup17')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3DYr3bJ">Nintendo Switch</a><br />
+      •
+      <a href="https://amzn.to/42cFwuE"
+        >Nintendo Switch (The Hidden Treasure of Area Zero Bundle)</a
+      ><br />
+      • <a href="https://amzn.to/40gN1OL">Nintendo Switch (Double Pack)</a
+      ><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4095Ove">Nintendo Switch</a><br />
+      • <a href="https://amzn.to/40vOT7x">Nintendo Switch (Double Pack)</a
+      ><br />
+      •
+      <a href="https://amzn.to/4jf9Pa2"
+        >Nintendo Switch (The Hidden Treasure of Area Zero Bundle)</a
+      >
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- Re3 -->
 <div id="popup15" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup15')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/3C4MJlX">PlayStation 5</a><br/>
-        • <a href="https://amzn.to/4fWUWqa">PlayStation 4</a><br/>
-        • <a href="https://amzn.to/40wqfDO">Xbox One</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/3E5fyiy">PlayStation 5</a><br/>
-        • <a href="https://amzn.to/4fZOcrJ">PlayStation 4</a><br/>
-        • <a href="https://amzn.to/3C8aWrv">Xbox One</a><br/><br/>
-        Global:<br/>
-        • <a href="https://store.steampowered.com/app/952060/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup15')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3C4MJlX">PlayStation 5</a><br />
+      • <a href="https://amzn.to/4fWUWqa">PlayStation 4</a><br />
+      • <a href="https://amzn.to/40wqfDO">Xbox One</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/3E5fyiy">PlayStation 5</a><br />
+      • <a href="https://amzn.to/4fZOcrJ">PlayStation 4</a><br />
+      • <a href="https://amzn.to/3C8aWrv">Xbox One</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/952060/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- Re3o -->
 <div id="popup16" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup16')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        • <a href="https://www.gog.com/game/resident_evil_3/">GOG</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup16')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>• <a href="https://www.gog.com/game/resident_evil_3/">GOG</a></p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- Re4o -->
 <div id="popup18" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup18')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/40iiqA5">Nintendo Switch (Triple Pack)</a><br/>
-        • <a href="https://amzn.to/4ahHWdn">PlayStation 4</a><br/>
-        • <a href="https://amzn.to/4ah0OcG">Xbox One</a><br/>
-        • <a href="https://amzn.to/3BZHVOO">Wii (Original)</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/3DYrH99">PlayStation 4</a><br/>
-        • <a href="https://amzn.to/4fWVtIG">Xbox One</a><br/><br/>
-        Global:<br/>
-        • <a href="https://store.steampowered.com/app/254700/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup18')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/40iiqA5">Nintendo Switch (Triple Pack)</a
+      ><br />
+      • <a href="https://amzn.to/4ahHWdn">PlayStation 4</a><br />
+      • <a href="https://amzn.to/4ah0OcG">Xbox One</a><br />
+      • <a href="https://amzn.to/3BZHVOO">Wii (Original)</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/3DYrH99">PlayStation 4</a><br />
+      • <a href="https://amzn.to/4fWVtIG">Xbox One</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/254700/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- RN -->
 <div id="popup19" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup19')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/3PAZdVq">Nintendo Switch (Double Pack)</a><br/>
-        • <a href="https://amzn.to/3DWiWMV">PlayStation 4 (Double Pack)</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/3WkoBTd">Nintendo Switch (Double Pack)</a><br/>
-        • <a href="https://amzn.to/4akCBSx">Nintendo Switch (Double Pack Day One)</a><br/><br/>
-        Global:<br/>
-        • <a href="https://store.steampowered.com/app/1111380/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup19')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3PAZdVq">Nintendo Switch (Double Pack)</a
+      ><br />
+      • <a href="https://amzn.to/3DWiWMV">PlayStation 4 (Double Pack)</a
+      ><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/3WkoBTd">Nintendo Switch (Double Pack)</a
+      ><br />
+      •
+      <a href="https://amzn.to/4akCBSx">Nintendo Switch (Double Pack Day One)</a
+      ><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/1111380/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- Gate0 -->
 <div id="popup20" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup20')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/3DV9eua">PlayStation 4</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/4096D7i">PlayStation 4</a><br/><br/>
-        Global:<br/>
-        • <a href="https://store.steampowered.com/app/825630/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup20')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3DV9eua">PlayStation 4</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4096D7i">PlayStation 4</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/825630/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- Neo -->
 <div id="popup21" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup21')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/3C5e4ED">Nintendo Switch</a><br/>
-        • <a href="https://amzn.to/4jhSWvC">PlayStation 4</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/3Wms6sq">Nintendo Switch</a><br/>
-        • <a href="https://amzn.to/4fXbTk7">PlayStation 4</a><br/><br/>
-        Global:<br/>
-        • <a href="https://store.steampowered.com/app/1647550/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup21')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/3C5e4ED">Nintendo Switch</a><br />
+      • <a href="https://amzn.to/4jhSWvC">PlayStation 4</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/3Wms6sq">Nintendo Switch</a><br />
+      • <a href="https://amzn.to/4fXbTk7">PlayStation 4</a><br /><br />
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/1647550/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- yttd -->
 <div id="popup22" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup22')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        Global:<br/>
-        • <a href="https://store.steampowered.com/app/2067780/">Steam</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup22')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      Global:<br />
+      • <a href="https://store.steampowered.com/app/2067780/">Steam</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- um -->
 <div id="popup23" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup23')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/42dquEU">Nintendo 3DS</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/4g161GP">Nintendo 3DS</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup23')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/42dquEU">Nintendo 3DS</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/4g161GP">Nintendo 3DS</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>
 <!-- oot -->
 <div id="popup24" class="popup-overlay">
   <div class="popup-content">
-      <button class="popup-close" onclick="closePopup('popup24')">×</button>
-      <h2>Thanks for checking out!</h2>
-      <p>
-        United States:<br/>
-        • <a href="https://amzn.to/4agM79i">Nintendo 3DS</a><br/><br/>
-        Canada:<br/>
-        • <a href="https://amzn.to/3WlFBbM">Nintendo 3DS</a><br/>
-        • <a href="https://amzn.to/3PzY6Fo">Nintendo 3DS (Nintendo Selects)</a>
-      </p>
-      <line1 style="bottom:4px;"></line1>
-      <p1 style="text-align: center;">Please note that every Amazon link here is an affiliate link. By purchasing through these links, you are supporting me and my website. Thank you!</p1>
-      <img src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg">
+    <button class="popup-close" onclick="closePopup('popup24')">×</button>
+    <h2>Thanks for checking out!</h2>
+    <p>
+      United States:<br />
+      • <a href="https://amzn.to/4agM79i">Nintendo 3DS</a><br /><br />
+      Canada:<br />
+      • <a href="https://amzn.to/3WlFBbM">Nintendo 3DS</a><br />
+      • <a href="https://amzn.to/3PzY6Fo">Nintendo 3DS (Nintendo Selects)</a>
+    </p>
+    <line1 style="bottom: 4px"></line1>
+    <p1 style="text-align: center"
+      >Please note that every Amazon link here is an affiliate link. By
+      purchasing through these links, you are supporting me and my website.
+      Thank you!</p1
+    >
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01//associates/network/revamp/AmazonAssociatesLogo.svg"
+    />
   </div>
 </div>

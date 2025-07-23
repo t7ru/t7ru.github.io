@@ -1,106 +1,106 @@
 /* Page Load Animations */
 @keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .whitespace,
 .box2,
 .box3 {
-	animation: fadeInUp 0.8s ease forwards;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .image-container {
-	opacity: 0;
-	animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
 .image-container:nth-child(2n) {
-	animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .image-container:nth-child(3n) {
-	animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .reveal {
-	opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .reveal.active {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .image-container img {
-	transition: transform 0.5s, filter 0.5s;
+  transition: transform 0.5s, filter 0.5s;
 }
 
 .image-container > img:hover {
-	transform: scale(1.03);
-	filter: brightness(1.1);
-	transform: translateY(-3px);
+  transform: scale(1.03);
+  filter: brightness(1.1);
+  transform: translateY(-3px);
 }
 
 .buy-button {
-	transition: all 0.3s ease;
-	position: relative;
-	overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .buy-button:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
 }
 
 .buy-button::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 5px;
-	height: 5px;
-	background: rgba(255, 255, 255, 0.5);
-	opacity: 0;
-	border-radius: 100%;
-	transform: translate(-50%, -50%);
-	transition: all 0.6s;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s;
 }
 
 .buy-button:active::after {
-	width: 200px;
-	height: 200px;
-	opacity: 0;
-	transition: 0s;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  transition: 0s;
 }
 
 body {
-	animation: diagonalMove 30s linear infinite;
+  animation: diagonalMove 30s linear infinite;
 }
 
 @keyframes diagonalMove {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 300px 300px;
-    }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300px 300px;
+  }
 }
 
 @keyframes slide {
-	from {
-	  transform: translateX(0);
-	}
-	to {
-	  transform: translateX(-1032px);
-	}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1032px);
+  }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap");
 
 html {
   font-family: "Carrois Gothic", serif;
@@ -86,7 +86,7 @@ body {
 }
 
 body.memoir {
-  background-image: url("/assets/memoirbg1.png"),
+  background-image: url("/assets/memoirbg1.png");
 }
 
 .whitespace {
@@ -149,7 +149,7 @@ line1 {
     rgb(0, 0, 0),
     rgba(0, 0, 0, 0)
   );
-  transform: scaleY(0.5); 
+  transform: scaleY(0.5);
   transform-origin: top;
 }
 
@@ -204,11 +204,11 @@ line1 {
 }
 
 h2 {
-  margin-bottom:-2%
+  margin-bottom: -2%;
 }
 
 h1 {
-  margin-bottom:-2%
+  margin-bottom: -2%;
 }
 
 .image-grid {
@@ -330,16 +330,16 @@ h1 {
 /* Buy button */
 .buy-button {
   padding: 4px 8px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: "Carrois Gothic", sans-serif;
   text-decoration: underline;
-  width:100%;
+  width: 100%;
 }
 
 /* hover color for buy button */
